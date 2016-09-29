@@ -40,7 +40,7 @@ int main(int argc, string argv[])
     }
     
     // input message to encode
-    printf("Don't be a pangolin, input your message\n");
+    printf("Y U no feed me (=°.°=) ?! :\n");
     string message = GetString();
 
     // array size starts at 0. string length starts at 1. ex : strlength("merde") will return 5, so you need a char array[4] (array[0] = "m", array[4] = "e")
@@ -110,7 +110,7 @@ int main(int argc, string argv[])
     // Important part cristal: I would have used normal printf for string "code" but weird characters kept on showing up. Not sure how to fix.
     /*for (int i = 0, n = strlen(message); i < n; i++)
         printf("%c", code[i]);*/
-    printf("%s \n", code);
+    printf("\nEncrypted message :\n%s\n", code);
         
     //printf("\n");
 }
