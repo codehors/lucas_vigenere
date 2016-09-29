@@ -29,7 +29,8 @@ int main(int argc, string argv[])
     string message = GetString();
 
     // array size starts at 0. string length starts at 1. ex : strlength("merde") will return 5, so you need a char array[4] (array[0] = "m", array[4] = "e")
-    char code[strlen(message - 1)];
+    int array_size = strlen(message) - 1;
+    char code[array_size];
 
     // Counter for non-alphabetic characters so the key isn't used on them
     int nonalpha = 0;
