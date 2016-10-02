@@ -57,7 +57,7 @@ int main(int argc, string argv[])
         if (isupper(message[i]))
         {
 	    // 
-            if (isupper(key[i % keylength]))
+            if (isupper(key[(i - nonalpha) % keylength]))
             {
                 code[i] = message[i] + key[(i - nonalpha) % keylength] - 'A';
                 // if outside of capital letter range bring it back (I should probably use modulo)
@@ -79,7 +79,7 @@ int main(int argc, string argv[])
         else if (islower(message[i]))
         {
 	    // 
-            if (isupper(key[i % keylength]))
+            if (isupper(key[(i - nonalpha) % keylength]))
             {
                 code[i] = message[i] + key[(i - nonalpha) % keylength] - 'A';
                 // same
